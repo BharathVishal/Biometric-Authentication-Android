@@ -26,8 +26,8 @@ A sample implementation of AndroidX biometrics API using Kotlin. Authenticate us
 
 &nbsp;
 ### Screenshots : 
-![Screenshot 1](https://github.com/BharathVishal/Biometric-Authentication-Android/blob/master/Screenshots/1.png?s=10)
-![Screenshot 2](https://github.com/BharathVishal/Biometric-Authentication-Android/blob/master/Screenshots/2.png?s=10)
+![Screenshot 1](https://github.com/BharathVishal/Biometric-Authentication-Android/blob/master/Screenshots/1.png?s=20)
+![Screenshot 2](https://github.com/BharathVishal/Biometric-Authentication-Android/blob/master/Screenshots/2.png?s=20)
 
 
 
