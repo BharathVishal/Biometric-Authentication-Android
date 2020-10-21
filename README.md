@@ -39,13 +39,13 @@ A sample implementation of AndroidX biometrics API using Kotlin. Authenticate us
 &nbsp;
 
 ### SDK Info : 
-Min SDK : 23  | Target SDK : 30 | Gradle : 6.1.1  | Kotlin
+Min SDK : 23  | Target SDK : 30 | Gradle : 6.5  | Kotlin
 
 &nbsp;
 
 
 ### Android Studio Version : 
-Android Studio 4.0.1
+Android Studio 4.1
 
 
 &nbsp;
