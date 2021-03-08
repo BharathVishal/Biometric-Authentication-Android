@@ -45,12 +45,12 @@ Min SDK : 23  | Target SDK : 30 | Gradle : 6.5  | Kotlin
 
 
 ### Android Studio Version : 
-Android Studio 4.1.1
+Android Studio 4.1.2
 
 
 &nbsp;
 
-© 2020. Developed by Bharath Vishal G (https://github.com/BharathVishal).
+© 2020-2021. Developed by Bharath Vishal G (https://github.com/BharathVishal).
 App logo - Fingerprint material icon.
 
 Thank you. :smile:
