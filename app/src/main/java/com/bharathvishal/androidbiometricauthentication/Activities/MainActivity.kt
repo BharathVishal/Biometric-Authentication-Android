@@ -1,17 +1,14 @@
 package com.bharathvishal.androidbiometricauthentication.Activities
 
-import android.app.KeyguardManager
 import android.content.Context
-import android.opengl.Visibility
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.biometric.BiometricPrompt
 import androidx.core.content.ContextCompat
 import com.bharathvishal.androidbiometricauthentication.Constants.Constants
-import com.bharathvishal.androidbiometricauthentication.R
 import com.bharathvishal.androidbiometricauthentication.Utilities.Utilities
-import kotlinx.android.synthetic.main.activity_main.*
+import com.bharathvishal.androidbiometricauthentication.databinding.ActivityMainBinding
 import java.util.concurrent.Executor
 
 
@@ -22,26 +19,32 @@ class MainActivity : AppCompatActivity() {
     private lateinit var biometricPrompt: BiometricPrompt
     private lateinit var promptInfo: BiometricPrompt.PromptInfo
 
+    private lateinit var binding: ActivityMainBinding
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+
         activityContext = this
 
         if (Utilities.deviceHasPasswordPinLock(activityContext))
-            Device_Has_PIN_PasswordLock.text = Constants.TRUE
+            binding.DeviceHasPINPasswordLock.text = Constants.TRUE
         else
-            Device_Has_PIN_PasswordLock.text = Constants.FALSE
+            binding.DeviceHasPINPasswordLock.text = Constants.FALSE
 
         executor = ContextCompat.getMainExecutor(activityContext)
 
         setPrompt()
 
         if (Utilities.isBiometricHardWareAvailable(activityContext)) {
-            Device_Has_BiometricFeatures.text = Constants.AVAILABLE
-            Device_Has_FingerPrint.text = Constants.TRUE
+            binding.DeviceHasBiometricFeatures.text = Constants.AVAILABLE
+            binding.DeviceHasFingerPrint.text = Constants.TRUE
 
             //Enable the button if the device has biometric hardware available
-            authenticatefingerprintbutton.isEnabled = true
+            binding.authenticatefingerprintbutton.isEnabled = true
 
             initBiometricPrompt(
                 Constants.BIOMETRIC_AUTHENTICATION,
@@ -50,14 +53,14 @@ class MainActivity : AppCompatActivity() {
                 false
             )
         } else {
-            Device_Has_BiometricFeatures.text = Constants.UNAVAILABLE
-            Device_Has_FingerPrint.text = Constants.FALSE
-            authenticatefingerprintbutton.isEnabled = false
+            binding.DeviceHasBiometricFeatures.text = Constants.UNAVAILABLE
+            binding.DeviceHasFingerPrint.text = Constants.FALSE
+            binding.authenticatefingerprintbutton.isEnabled = false
 
             //Fallback, use device password/pin
             if (Utilities.deviceHasPasswordPinLock(activityContext)) {
-                authenticatefingerprintbutton.isEnabled = true
-                authenticatefingerprintbutton.text = Constants.AUTHENTICATE_OTHER
+                binding.authenticatefingerprintbutton.isEnabled = true
+                binding.authenticatefingerprintbutton.text = Constants.AUTHENTICATE_OTHER
 
                 initBiometricPrompt(
                     Constants.PASSWORD_PIN_AUTHENTICATION,
@@ -91,7 +94,7 @@ class MainActivity : AppCompatActivity() {
                         Constants.AUTHENTICATION_SUCCEEDED,
                         activityContext as MainActivity
                     )
-                    textViewAuthResult.visibility = View.VISIBLE
+                    binding.textViewAuthResult.visibility = View.VISIBLE
                 }
 
                 override fun onAuthenticationFailed() {
@@ -126,7 +129,7 @@ class MainActivity : AppCompatActivity() {
                 .build()
         }
 
-        authenticatefingerprintbutton.setOnClickListener {
+        binding.authenticatefingerprintbutton.setOnClickListener {
             biometricPrompt.authenticate(promptInfo)
         }
     }
