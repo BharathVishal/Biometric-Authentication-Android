@@ -1,9 +1,12 @@
 package com.bharathvishal.androidbiometricauthentication.Activities
 
 import android.content.Context
+import android.os.Build
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.biometric.BiometricManager.Authenticators.BIOMETRIC_STRONG
+import androidx.biometric.BiometricManager.Authenticators.DEVICE_CREDENTIAL
 import androidx.biometric.BiometricPrompt
 import androidx.core.content.ContextCompat
 import com.bharathvishal.androidbiometricauthentication.Constants.Constants
@@ -114,12 +117,22 @@ class MainActivity : AppCompatActivity() {
         setDeviceCred: Boolean
     ) {
         if (setDeviceCred) {
-            promptInfo = BiometricPrompt.PromptInfo.Builder()
-                .setTitle(title)
-                .setSubtitle(subtitle)
-                .setDescription(description)
-                .setDeviceCredentialAllowed(true)
-                .build()
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                val authFlag = DEVICE_CREDENTIAL or BIOMETRIC_STRONG
+                promptInfo = BiometricPrompt.PromptInfo.Builder()
+                    .setTitle(title)
+                    .setSubtitle(subtitle)
+                    .setDescription(description)
+                    .setAllowedAuthenticators(authFlag)
+                    .build()
+            } else {
+                promptInfo = BiometricPrompt.PromptInfo.Builder()
+                    .setTitle(title)
+                    .setSubtitle(subtitle)
+                    .setDescription(description)
+                    .setDeviceCredentialAllowed(true)
+                    .build()
+            }
         } else {
             promptInfo = BiometricPrompt.PromptInfo.Builder()
                 .setTitle(title)
