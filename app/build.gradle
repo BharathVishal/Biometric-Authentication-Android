@@ -9,7 +9,7 @@ android {
         applicationId "com.bharathvishal.androidbiometricauthentication"
         minSdkVersion 23
         targetSdkVersion 31
-        versionCode 10
+        versionCode 12
         versionName "1.2.7"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
