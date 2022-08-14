@@ -4,7 +4,7 @@
 <img src="Logo/icon.png" width=25%>
 </h1>
 
-A sample implementation of AndroidX biometrics API using Kotlin. Authenticate using biometrics or PIN/Password if biometrics isn't available on device.
+A sample implementation of AndroidX biometrics API using Kotlin. Authenticate using biometrics or PIN/Password if biometrics isn't available on device. Fully implemented in Jetpack compose using Material 3 dynamic theming and also has a separate implementation with xml
 
 &nbsp;
 ### Usage:
@@ -26,8 +26,9 @@ A sample implementation of AndroidX biometrics API using Kotlin. Authenticate us
 
 &nbsp;
 ### Screenshots : 
-![Screenshot 1](https://github.com/BharathVishal/Biometric-Authentication-Android/blob/master/Screenshots/1.png?s=15)
-![Screenshot 2](https://github.com/BharathVishal/Biometric-Authentication-Android/blob/master/Screenshots/2.png?s=15)
+![Screenshot 1](https://github.com/BharathVishal/Biometric-Authentication-Android/blob/master/Screenshots/1.png?s=10)
+![Screenshot 2](https://github.com/BharathVishal/Biometric-Authentication-Android/blob/master/Screenshots/2.png?s=10)
+![Screenshot 2](https://github.com/BharathVishal/Biometric-Authentication-Android/blob/master/Screenshots/3.jpg?s=10)
 
 
 
@@ -39,7 +40,7 @@ A sample implementation of AndroidX biometrics API using Kotlin. Authenticate us
 &nbsp;
 
 ### SDK Info : 
-Min SDK : 23  | Target SDK : 33 | Gradle : 7.2.2  | Kotlin
+Min SDK : 23  | Target SDK : 33 | Gradle : 7.2.2  | Kotlin | Jetpack Compose
 
 &nbsp;
 
