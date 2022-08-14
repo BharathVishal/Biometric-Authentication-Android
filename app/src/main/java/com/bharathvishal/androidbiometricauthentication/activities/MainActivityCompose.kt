@@ -176,7 +176,6 @@ class MainActivityCompose : AppCompatActivity(), CoroutineScope by MainScope() {
                     horizontalAlignment = Alignment.CenterHorizontally,
                 )
                 {
-                    //Battery Info Image logo composable function
                     ImageLogo()
                     TextHeader()
 
