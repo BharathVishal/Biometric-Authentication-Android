@@ -1,4 +1,4 @@
-package com.bharathvishal.androidbiometricauthentication.ApplicationClass
+package com.bharathvishal.androidbiometricauthentication.applicationClass
 
 import android.app.Application
 import com.google.android.material.color.DynamicColors

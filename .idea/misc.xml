@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Vishal/Documents/GitHub Projects/Biometric-Authentication-Android/app/src/main/res/drawable/ic_baseline_fingerprint_24.xml" value="0.196" />
         <entry key="..\:/Users/Vishal/Documents/GitHub Projects/Biometric-Authentication-Android/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>

@@ -1,4 +1,4 @@
-package com.bharathvishal.androidbiometricauthentication.Utilities
+package com.bharathvishal.androidbiometricauthentication.utilities
 
 import android.app.Activity
 import android.app.KeyguardManager

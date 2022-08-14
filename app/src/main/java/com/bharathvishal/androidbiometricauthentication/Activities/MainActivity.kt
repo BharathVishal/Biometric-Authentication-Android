@@ -1,4 +1,4 @@
-package com.bharathvishal.androidbiometricauthentication.Activities
+package com.bharathvishal.androidbiometricauthentication.activities
 
 import android.content.Context
 import android.os.Build
@@ -9,8 +9,8 @@ import androidx.biometric.BiometricManager.Authenticators.BIOMETRIC_STRONG
 import androidx.biometric.BiometricManager.Authenticators.DEVICE_CREDENTIAL
 import androidx.biometric.BiometricPrompt
 import androidx.core.content.ContextCompat
-import com.bharathvishal.androidbiometricauthentication.Constants.Constants
-import com.bharathvishal.androidbiometricauthentication.Utilities.Utilities
+import com.bharathvishal.androidbiometricauthentication.constants.Constants
+import com.bharathvishal.androidbiometricauthentication.utilities.Utilities
 import com.bharathvishal.androidbiometricauthentication.databinding.ActivityMainBinding
 import java.util.concurrent.Executor
 
@@ -117,6 +117,8 @@ class MainActivity : AppCompatActivity() {
         setDeviceCred: Boolean
     ) {
         if (setDeviceCred) {
+            /*For API level > 30
+              Newer API setAllowedAuthenticators is used*/
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
                 val authFlag = DEVICE_CREDENTIAL or BIOMETRIC_STRONG
                 promptInfo = BiometricPrompt.PromptInfo.Builder()
@@ -126,6 +128,9 @@ class MainActivity : AppCompatActivity() {
                     .setAllowedAuthenticators(authFlag)
                     .build()
             } else {
+                /*SetDeviceCredentials method deprecation is ignored here
+                  as this block is for API level<30*/
+                @Suppress("DEPRECATION")
                 promptInfo = BiometricPrompt.PromptInfo.Builder()
                     .setTitle(title)
                     .setSubtitle(subtitle)

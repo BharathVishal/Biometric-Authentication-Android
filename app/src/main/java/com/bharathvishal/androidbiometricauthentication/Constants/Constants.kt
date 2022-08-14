@@ -1,4 +1,4 @@
-package com.bharathvishal.androidbiometricauthentication.Constants
+package com.bharathvishal.androidbiometricauthentication.constants
 
 object Constants {
     const val AUTHENTICATION_FAILED = "Authentication failed"
@@ -11,6 +11,7 @@ object Constants {
     const val BIOMETRIC_AUTHENTICATION_DESCRIPTION = "This app uses your makes use of device biometrics (user fingerprint) to authenticate the dialog."
 
     const val AUTHENTICATE_OTHER="Authenticate using Device Password/PIN"
+    const val AUTHENTICATE_FINGERPRINT="Authenticate using Fingerprint"
 
     const val AVAILABLE="Available"
     const val UNAVAILABLE="Unavailable"
