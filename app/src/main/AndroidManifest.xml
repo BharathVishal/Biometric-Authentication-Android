@@ -16,6 +16,7 @@
             android:name=".activities.SplashActivity"
             android:exported="true"
             android:resizeableActivity="true"
+            android:theme="@style/ThemeAppStarting"
             tools:targetApi="n">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
