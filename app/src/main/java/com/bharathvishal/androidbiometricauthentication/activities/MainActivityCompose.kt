@@ -144,7 +144,7 @@ class MainActivityCompose : AppCompatActivity(), CoroutineScope by MainScope() {
     @OptIn(ExperimentalMaterial3Api::class)
     @Composable
     fun TopAppBarMain() {
-        SmallTopAppBar(
+        TopAppBar(
             title = { Text("Biometric Authentication Android  - Compose Activity") },
             colors = TopAppBarDefaults.smallTopAppBarColors(
                 titleContentColor = MaterialTheme.colorScheme.onSurfaceVariant,
