@@ -146,7 +146,7 @@ class MainActivityCompose : AppCompatActivity(), CoroutineScope by MainScope() {
     fun TopAppBarMain() {
         TopAppBar(
             title = { Text("Biometric Authentication Android  - Compose Activity") },
-            colors = TopAppBarDefaults.smallTopAppBarColors(
+            colors = TopAppBarDefaults.topAppBarColors(
                 titleContentColor = MaterialTheme.colorScheme.onSurfaceVariant,
                 containerColor = MaterialTheme.colorScheme.surface
             )
