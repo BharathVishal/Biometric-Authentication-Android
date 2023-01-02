@@ -53,7 +53,7 @@ Android Studio Dolphin | 2021.3.1 Patch 1
 
 &nbsp;
 
-© 2020-2022. Developed by Bharath Vishal G (https://github.com/BharathVishal).
+© 2020-2023. Developed by Bharath Vishal G (https://github.com/BharathVishal).
 App logo - Fingerprint material icon.
 
 Thank you. :smile:
