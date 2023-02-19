@@ -54,7 +54,7 @@ Android Studio Electric Eel | 2022.1.1
 &nbsp;
 
 #### License : 
-[Apache License 2.0](https://github.com/BharathVishal/App-Manager-Android/blob/master/LICENSE)
+[Apache License 2.0](https://github.com/BharathVishal/Biometric-Authentication-Android/blob/master/LICENSE)
 &nbsp;
 
 &nbsp;
