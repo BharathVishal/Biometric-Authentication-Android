@@ -62,4 +62,5 @@ Android Studio Electric Eel | 2022.1.1
 © 2020-2023. Developed by Bharath Vishal G (https://github.com/BharathVishal).
 App logo - Fingerprint material icon.
 
-Thank you. :smile:
+Thank you. :slightly_smiling_face:
+
