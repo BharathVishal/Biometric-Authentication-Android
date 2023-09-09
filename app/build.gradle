@@ -2,15 +2,15 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 34
+    compileSdk 34
     buildToolsVersion "34.0.0"
 
     defaultConfig {
         applicationId "com.bharathvishal.androidbiometricauthentication"
         minSdkVersion 23
         targetSdkVersion 34
-        versionCode 69
-        versionName "3.0"
+        versionCode 72
+        versionName "3.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildFeatures {
@@ -37,7 +37,7 @@ android {
         jvmTarget = "17"
     }
     composeOptions {
-        kotlinCompilerExtensionVersion "1.4.7"
+        kotlinCompilerExtensionVersion "1.5.1"
     }
     packagingOptions {
         resources {
@@ -50,22 +50,22 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.10.0-alpha04'
+    implementation 'com.google.android.material:material:1.11.0-alpha02'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.biometric:biometric:1.1.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-    implementation 'androidx.compose.material3:material3:1.2.0-alpha03'
-    implementation "androidx.compose.material3:material3-window-size-class:1.2.0-alpha03"
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'
+    implementation 'androidx.compose.material3:material3:1.2.0-alpha07'
+    implementation "androidx.compose.material3:material3-window-size-class:1.2.0-alpha07"
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.2'
     implementation 'androidx.activity:activity-compose:1.7.2'
-    androidTestImplementation "androidx.compose.ui:ui-test-junit4:1.4.3"
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4:1.5.1"
     implementation 'androidx.core:core-splashscreen:1.0.1'
-    debugImplementation 'androidx.compose.ui:ui-tooling:1.4.3'
-    implementation "androidx.compose.ui:ui-tooling-preview:1.4.3"
+    debugImplementation 'androidx.compose.ui:ui-tooling:1.5.1'
+    implementation "androidx.compose.ui:ui-tooling-preview:1.5.1"
     implementation "com.google.accompanist:accompanist-systemuicontroller:0.28.0"
 }
