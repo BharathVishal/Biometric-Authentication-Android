@@ -1,4 +1,4 @@
-package com.bharathvishal.androidbiometricauthentication
+package com.bharathvishal.biometricauthentication
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

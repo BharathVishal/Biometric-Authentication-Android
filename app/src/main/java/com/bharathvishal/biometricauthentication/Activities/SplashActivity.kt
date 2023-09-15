@@ -16,7 +16,7 @@
  *
  **/
 
-package com.bharathvishal.androidbiometricauthentication.activities
+package com.bharathvishal.biometricauthentication.activities
 
 import android.annotation.SuppressLint
 import android.content.Context

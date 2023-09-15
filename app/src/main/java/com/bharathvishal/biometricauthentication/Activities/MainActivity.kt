@@ -16,7 +16,7 @@
  *
  **/
 
-package com.bharathvishal.androidbiometricauthentication.activities
+package com.bharathvishal.biometricauthentication.activities
 
 import android.content.Context
 import android.os.Build
@@ -27,9 +27,9 @@ import androidx.biometric.BiometricManager.Authenticators.BIOMETRIC_STRONG
 import androidx.biometric.BiometricManager.Authenticators.DEVICE_CREDENTIAL
 import androidx.biometric.BiometricPrompt
 import androidx.core.content.ContextCompat
-import com.bharathvishal.androidbiometricauthentication.constants.Constants
-import com.bharathvishal.androidbiometricauthentication.utilities.Utilities
-import com.bharathvishal.androidbiometricauthentication.databinding.ActivityMainBinding
+import com.bharathvishal.biometricauthentication.databinding.ActivityMainBinding
+import com.bharathvishal.biometricauthentication.constants.Constants
+import com.bharathvishal.biometricauthentication.utilities.Utilities
 import java.util.concurrent.Executor
 
 

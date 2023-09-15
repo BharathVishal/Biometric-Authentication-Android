@@ -1,4 +1,4 @@
-package com.bharathvishal.androidbiometricauthentication.theme
+package com.bharathvishal.biometricauthentication.theme
 
 
 import androidx.compose.foundation.shape.RoundedCornerShape

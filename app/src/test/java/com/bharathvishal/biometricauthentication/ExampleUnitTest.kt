@@ -1,4 +1,4 @@
-package com.bharathvishal.androidbiometricauthentication
+package com.bharathvishal.biometricauthentication
 
 import org.junit.Test
 

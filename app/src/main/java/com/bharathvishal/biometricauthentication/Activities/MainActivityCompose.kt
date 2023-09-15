@@ -16,7 +16,7 @@
  *
  **/
 
-package com.bharathvishal.androidbiometricauthentication.activities
+package com.bharathvishal.biometricauthentication.activities
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -42,10 +42,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.toColorInt
-import com.bharathvishal.androidbiometricauthentication.R
-import com.bharathvishal.androidbiometricauthentication.constants.Constants
-import com.bharathvishal.androidbiometricauthentication.theme.Material3AppTheme
-import com.bharathvishal.androidbiometricauthentication.utilities.Utilities
+import com.bharathvishal.biometricauthentication.R
+import com.bharathvishal.biometricauthentication.constants.Constants
+import com.bharathvishal.biometricauthentication.theme.Material3AppTheme
+import com.bharathvishal.biometricauthentication.utilities.Utilities
 import com.google.android.material.color.DynamicColors
 import kotlinx.coroutines.*
 import java.util.concurrent.Executor
@@ -163,7 +163,7 @@ class MainActivityCompose : AppCompatActivity(), CoroutineScope by MainScope() {
     @Composable
     fun TopAppBarMain() {
         TopAppBar(
-            title = { Text("Biometric Authentication Android  - Compose Activity") },
+            title = { Text("Biometric Authentication") },
             colors = TopAppBarDefaults.topAppBarColors(
                 titleContentColor = MaterialTheme.colorScheme.onSurfaceVariant,
                 containerColor = MaterialTheme.colorScheme.surface

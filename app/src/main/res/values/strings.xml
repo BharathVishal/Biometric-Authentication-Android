@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Biometric Authentication Android</string>
+    <string name="app_name">Biometric Authentication</string>
     <string name="authenticate_fingerprint">Authenticate Using Fingerprint</string>
     <string name="device_has_pin_password">Device Has PIN/Password</string>
 </resources>

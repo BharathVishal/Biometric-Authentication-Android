@@ -16,7 +16,7 @@
  *
  **/
 
-package com.bharathvishal.androidbiometricauthentication.utilities
+package com.bharathvishal.biometricauthentication.utilities
 
 import android.app.Activity
 import android.app.KeyguardManager
@@ -28,7 +28,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.biometric.BiometricManager
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.bharathvishal.androidbiometricauthentication.R
+import com.bharathvishal.biometricauthentication.R
 import com.google.android.material.snackbar.Snackbar
 
 object Utilities {

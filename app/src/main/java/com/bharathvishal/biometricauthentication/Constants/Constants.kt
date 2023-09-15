@@ -16,7 +16,7 @@
  *
  **/
 
-package com.bharathvishal.androidbiometricauthentication.constants
+package com.bharathvishal.biometricauthentication.constants
 
 object Constants {
     const val AUTHENTICATION_FAILED = "Authentication failed"
