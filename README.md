@@ -40,14 +40,13 @@ A sample implementation of AndroidX biometrics API using Kotlin. Authenticate us
 &nbsp;
 
 ### SDK Info : 
-Min SDK : 23  | Target SDK : 34 | Gradle : 8.1.3  | Kotlin | Jetpack Compose
+Min SDK : 23  | Target SDK : 34 | Gradle : 8.2.0  | Kotlin | Jetpack Compose
 
 &nbsp;
 
 
 ### Android Studio Version : 
-Android Studio Giraffe | 2022.3.1 Patch 3
-
+Android Studio Hedgehog | 2023.1.1
 
 
 &nbsp;
@@ -62,7 +61,7 @@ Android is a trademark of Google LLC.
 
 &nbsp;
 
-© 2020-2023. Developed by Bharath Vishal G (https://github.com/BharathVishal).
+© 2020-2024. Developed by Bharath Vishal G (https://github.com/BharathVishal).
 App logo - Fingerprint material icon.
 
 Thank you. :slightly_smiling_face:
