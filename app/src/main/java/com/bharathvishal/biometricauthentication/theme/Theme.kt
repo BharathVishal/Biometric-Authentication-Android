@@ -2,6 +2,7 @@ package com.bharathvishal.biometricauthentication.theme
 
 
 import android.os.Build
+import android.util.Log
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -89,12 +90,15 @@ fun Material3AppTheme(
                     color = DarkColorScheme.surface,
                     darkIcons = false
                 )
+                Log.d("came1","came into dark theme")
                 dynamicDarkColorScheme(context)
             } else {
                 systemUiController.setStatusBarColor(
                     color = LightColorScheme.surface,
                     darkIcons = true
                 )
+                Log.d("came1","came into light theme")
+
                 dynamicLightColorScheme(context)
             }
         }

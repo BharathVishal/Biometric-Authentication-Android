@@ -20,14 +20,18 @@ package com.bharathvishal.biometricauthentication.activities
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.content.res.Configuration
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.biometric.BiometricManager
 import androidx.biometric.BiometricPrompt
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
@@ -67,6 +71,17 @@ class MainActivityCompose : AppCompatActivity(), CoroutineScope by MainScope() {
     private var snackBarMessageVal = mutableStateOf("-")
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        //1.2.6
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.VANILLA_ICE_CREAM) {
+                enableEdgeToEdge()
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+
+
         super.onCreate(savedInstanceState)
 
         //Applies Material dynamic theming
@@ -79,7 +94,7 @@ class MainActivityCompose : AppCompatActivity(), CoroutineScope by MainScope() {
         activityContext = this
 
         setContent {
-            Material3AppTheme {
+            Material3AppTheme(darkTheme = true) {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background

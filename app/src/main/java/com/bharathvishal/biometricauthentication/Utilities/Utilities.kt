@@ -61,8 +61,10 @@ object Utilities {
                 BiometricManager.BIOMETRIC_ERROR_NONE_ENROLLED -> result = false
                 BiometricManager.BIOMETRIC_ERROR_SECURITY_UPDATE_REQUIRED ->
                     result = true
+
                 BiometricManager.BIOMETRIC_ERROR_UNSUPPORTED ->
                     result = true
+
                 BiometricManager.BIOMETRIC_STATUS_UNKNOWN ->
                     result = false
             }
