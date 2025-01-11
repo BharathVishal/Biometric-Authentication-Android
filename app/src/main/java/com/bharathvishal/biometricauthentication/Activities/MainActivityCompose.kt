@@ -72,7 +72,6 @@ class MainActivityCompose : AppCompatActivity(), CoroutineScope by MainScope() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        //1.2.6
         try {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.VANILLA_ICE_CREAM) {
                 enableEdgeToEdge()

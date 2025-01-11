@@ -55,7 +55,6 @@ class MainActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        //1.2.6
         try {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.VANILLA_ICE_CREAM) {
                 enableEdgeToEdge()
@@ -74,20 +73,21 @@ class MainActivity : AppCompatActivity() {
 
         try {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.VANILLA_ICE_CREAM) {
-                val viewTempAppBar = findViewById<View>(R.id.appbarLayout);
+                val viewTempAppBar = findViewById<View>(R.id.appbarLayout)
                 viewTempAppBar.setOnApplyWindowInsetsListener { view, insets ->
                     val statusBarInsets = insets.getInsets(WindowInsets.Type.statusBars())
 
-                    val nightModeFlags: Int = activityContext.resources
-                        .getConfiguration().uiMode and Configuration.UI_MODE_NIGHT_MASK
+                    val nightModeFlags: Int =  view.resources
+                        .configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK
                     val isDarkMode = nightModeFlags == Configuration.UI_MODE_NIGHT_YES
-                    val isDynamicTheme = DynamicColors.isDynamicColorAvailable();
+                    val isDynamicTheme = DynamicColors.isDynamicColorAvailable()
                     // Adjust padding to avoid overlap
                     view.setPadding(0, statusBarInsets.top, 0, 0)
-                    insets
+                    //insets
+                    WindowInsets.CONSUMED
                 }
 
-                val tempL: View = findViewById<View>(R.id.cardviewMain1);
+                val tempL: View = findViewById<View>(R.id.cardviewMain1)
                 ViewCompat.setOnApplyWindowInsetsListener(tempL) { view, windowInsets ->
                     val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemGestures())
                     // Apply the insets as padding to the view. Here, set all the dimensions
