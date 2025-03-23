@@ -93,7 +93,7 @@ class MainActivityCompose : AppCompatActivity(), CoroutineScope by MainScope() {
         activityContext = this
 
         setContent {
-            Material3AppTheme(darkTheme = true) {
+            Material3AppTheme(darkTheme = isSystemInDarkTheme()) {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
@@ -240,8 +240,8 @@ class MainActivityCompose : AppCompatActivity(), CoroutineScope by MainScope() {
             painter = painterResource(R.drawable.ic_baseline_fingerprint_24),
             contentDescription = "Image Logo",
             modifier = Modifier
-                .requiredHeight(125.dp)
-                .requiredWidth(125.dp)
+                .requiredHeight(90.dp)
+                .requiredWidth(90.dp)
                 .padding(5.dp)
         )
     }

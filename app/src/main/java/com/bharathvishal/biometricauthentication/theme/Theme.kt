@@ -81,6 +81,7 @@ fun Material3AppTheme(
     dynamicColor: Boolean = true,
     content: @Composable () -> Unit
 ) {
+
     val systemUiController = rememberSystemUiController()
     val colorScheme = when {
         dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
