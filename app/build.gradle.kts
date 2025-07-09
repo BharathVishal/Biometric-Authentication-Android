@@ -6,16 +6,16 @@ plugins {
 
 android {
     namespace = "com.bharathvishal.biometricauthentication"
-    compileSdk = 35
+    compileSdk = 36
     defaultConfig {
         applicationId = "com.bharathvishal.biometricauthentication"
         vectorDrawables {
             useSupportLibrary = true
         }
         minSdk = 23
-        targetSdk = 35
-        versionCode = 89
-        versionName = "3.9"
+        targetSdk = 36
+        versionCode = 91
+        versionName = "4.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     buildFeatures {
